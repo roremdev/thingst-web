@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+    version: 0.1.0
+    title: Thingst
+    license:
+        name: MIT
+        url: 'https://github.com/roremdev/thingst-web/blob/development/markdown/license.md'
+    # x-logo:
+    #     url: 'https://raw.githubusercontent.com/Three-Points/Agora/development/src/assets/logo.svg'
+    description: |
+        **About "Thingst"**
+
+        The propuse of this project is to create a minimal Single Page Application with ReactJS.
+
+        [![Website](https://img.shields.io/badge/Website-ECEFF4?style=for-the-badge&logo=iCloud&logoColor=2E3440)]()
+externalDocs:
+    description: Github project ✨
+    url: 'https://github.com/roremdev/thingst-web'
+tags:
+    - name: Service
+      description: Resource for the service exposed by server.
+servers:
+    - url: 'http://localhost:3000/api'
+      description: Development server
+paths:
+    /:
+        get:
+            summary: Hello System
+            description: |
+                Return a hello world from Thingst.
+            operationId: getIndex
+            responses:
+                '200':
+                    description: Success
+                    content:
+                        application/json:
+                            schema:
+                                allOf:
+                                    - $ref: '#/components/schemas/Info'
+                                example:
+                                    name: Thingst
+                                    version: 0.1.0
+                '400':
+                    $ref: '#/components/responses/BadRequest'
+components:
+    schemas:
+        Info:
+            type: object
+            properties:
+                name:
+                    description: Project name
+                    type: string
+                version:
+                    type: string
+    responses:
+        BadRequest:
+            description: The specified resource was bad request
+            content:
+                application/json:
+                    schema:
+                        type: string
+                        example: Bad request
