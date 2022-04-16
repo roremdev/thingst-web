@@ -20,15 +20,15 @@ For start to develop with this project follow the steps below:
 
 1. Install the dependencies (Use **npm** preferably):
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 2. Run the application in mode `development`:
 
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 
 ### Storybook
 
