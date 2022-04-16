@@ -6,15 +6,15 @@
 ![Node](https://img.shields.io/badge/v14.X-ECEFF4?style=for-the-badge&logo=Node.js)
 ![Website](https://img.shields.io/badge/supported-A7C9E6?style=for-the-badge&logo=Typescript)
 
-## Introduction
+## ✨About The Project
 
 The propuse of this project is to create a little website as Single Page Application with ReactJS.
 
 [![Website](https://img.shields.io/badge/Website-ECEFF4?style=for-the-badge&logo=iCloud&logoColor=2E3440)]()
 
-### Getting Started
+### 📦 Getting Started
 
-#### Installation
+#### ⚡️ First Steps
 
 For start to develop with this project follow the steps below:
 
@@ -24,13 +24,37 @@ For start to develop with this project follow the steps below:
     npm install
     ```
 
+    Or if you prefer to use **yarn**:
+
+    ```bash
+    yarn install
+    ```
+
 2. Run the application in mode `development`:
 
     ```bash
     npm run dev
     ```
 
-### Storybook
+    Or if you prefer to use **yarn**:
+
+    ```bash
+    yarn dev
+    ```
+
+3. Run the application in mode `production`:
+
+    ```bash
+    npm start
+    ```
+
+    Or if you prefer to use **yarn**:
+
+    ```bash
+    yarn start
+    ```
+
+### 📚 Storybook
 
 This project has Storybook to help you to develop and test your components. You can join to first builds in Chromatic.
 
@@ -44,7 +68,7 @@ npm run storybook
 
 Next, you can open the application in your browser.
 
-### Testing
+### 🧪 Testing
 
 This project has MirageJS as helper server who return a pool of endpoints.
 
