@@ -1,26 +1,5 @@
-.main {
-    align-items: center;
-    background-color: #fafafa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
 
-.logo {
-    background-image: url('./assets/logo.svg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 180px;
-    width: 300px;
-}
-
-.favicon {
-    background-image: url('./assets/favicon.svg');
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 75px;
-    width: 75px;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
