@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react-jsx",
+        "moduleResolution": "Node",
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "paths": {
+            "@layouts/*": ["./src/layouts/*"]
+        }
+    },
+    "include": ["src"]
+}
