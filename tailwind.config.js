@@ -1,8 +1,8 @@
 module.exports = {
-    content: ['./src/**/*.{html,js,jsx,mdx}'],
+    content: ['./src/**/*.{html,ts,tsx,mdx}'],
     theme: {
         fontFamily: {
-            ubuntu: ['Nunito', 'sans-serif'],
+            nunito: ['Nunito', 'sans-serif'],
         },
         colors: {
             primary: {
@@ -21,12 +21,21 @@ module.exports = {
         },
         extend: {
             boxShadow: {
-                DEFAULT: '0px 8px 24px #404C566A',
+                inside: 'inset 0px 0px 0px 2px #4C566A',
+            },
+            backgroundImage: {
+                car: "url('./assets/icons/car.svg')",
+                cross: "url('./assets/icons/cross.svg')",
+                dollar: "url('./assets/icons/dollar.svg')",
+                filter: "url('./assets/icons/filter.svg')",
+                search: "url('./assets/icons/search.svg')",
             },
         },
     },
     plugins: [
         require('./src/theme/base'),
-        // require('./src/theme/index.components'),
+        require('./src/theme/components/index.component'),
+        require('./src/theme/components/card.component'),
+        require('./src/theme/util'),
     ],
 }

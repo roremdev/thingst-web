@@ -10,7 +10,15 @@
         "isolatedModules": true,
         "noEmit": true,
         "paths": {
-            "@layouts/*": ["./src/layouts/*"]
+            "@src/*": ["./src/*"],
+            "@assets/*": ["./src/assets/*"],
+            "@baseComponents/*": ["./src/components/base/*"],
+            "@containerComponents/*": ["./src/components/container/*"],
+            "@controllers/*": ["./src/controllers/*"],
+            "@layouts/*": ["./src/layouts/*"],
+            "@services/*": ["./src/services/*"],
+            "@server/*": ["./src/server/*"],
+            "@views/*": ["./src/views/*"]
         }
     },
     "include": ["src"]

@@ -7,6 +7,7 @@ export default defineConfig({
     root: './src',
     build: {
         outDir: resolve(__dirname, '../dist'),
+        reportCompressedSize: true,
     },
     resolve: {
         alias: {
